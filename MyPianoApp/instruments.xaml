@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyPianoApp.instruments"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.IconColor="Aqua"
+             BackgroundColor="Black"
+             >
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="Black">
+
+        <HorizontalStackLayout>
+            <Frame Padding="0,0,0,0" Margin="0,0,0,10" BorderColor="Aqua">
+                <Button Text="Geri Dön" Pressed="btnGeri_Clicked" BackgroundColor="Black" TextColor="Aqua" >
+
+                </Button>
+            </Frame>
+        </HorizontalStackLayout>
+        <VerticalStackLayout>
+            <Frame BorderColor="Aqua" >
+                <ScrollView Orientation="Horizontal" >
+                    <HorizontalStackLayout Spacing="120" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <VerticalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            <ImageButton x:Name="btnParlakPiano" Clicked="btnForInstruments"  AutomationId="1" Margin="0,0,0,10" Source="grand_piano.png" WidthRequest="200" HeightRequest="200">
+
+                            </ImageButton>
+                            <Label Text="Parlak Piano" HorizontalOptions="Center">
+
+                            </Label>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            <ImageButton x:Name="btnElektronikPiano" Clicked="btnForInstruments"  AutomationId="2" Margin="0,0,0,10" Source="keyboard.png" WidthRequest="200" HeightRequest="200">
+
+                            </ImageButton>
+                            <Label Text="Elektronk Piano" HorizontalOptions="Center">
+
+                            </Label>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            <ImageButton x:Name="btnAkustikGitar" Clicked="btnForInstruments" AutomationId="3" Margin="0,0,0,10" Source="guitar.png" WidthRequest="200" HeightRequest="200">
+
+                            </ImageButton>
+                            <Label Text="Akustik Gitar" HorizontalOptions="Center">
+
+                            </Label>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </ScrollView>
+            </Frame>
+        </VerticalStackLayout>
+    </StackLayout>
+</ContentPage>

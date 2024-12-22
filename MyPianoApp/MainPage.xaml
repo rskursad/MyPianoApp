@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyPianoApp.MainPage"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.IconColor="Aqua"
+             BackgroundColor="Black"
+             >
+  
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <HorizontalStackLayout BackgroundColor="Black" Padding="5,5,10,1">
+            <Frame Padding="0,0,0,0" Margin="5,0,5,5" BorderColor="Turquoise">
+                <Button x:Name="btnTema" ImageSource="theme.png" WidthRequest="90" HeightRequest="40"  Text="Açık" FontSize="9" Clicked="tema" BackgroundColor="Black" TextColor="Aqua" >
+
+                </Button>
+            </Frame> 
+            <Frame Padding="0,0,0,0" Margin="0,0,0,5" BorderColor="Turquoise">
+                <ImageButton Source="settings.png" WidthRequest="50" HeightRequest="30" Padding="5,5,5,5"   Clicked="ayarlar_Clicked" >
+                
+            </ImageButton>
+            </Frame>
+         
+            
+        </HorizontalStackLayout>
+        <ScrollView Orientation="Horizontal" Padding="10,0,10,20" HorizontalOptions="CenterAndExpand">
+    
+            <AbsoluteLayout x:Name="absoluteLayout" HorizontalOptions="CenterAndExpand">
+                
+                <Button
+                    
+                    x:Name="btnDo"
+                Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="0,0,70,300"
+               AutomationId="do"
+                  
+                  BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="72,0,70,300"
+              AutomationId="re"     
+              BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="144,0,70,300"
+              AutomationId="mi"     
+              BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="216,0,70,300"
+              AutomationId="fa"     
+              BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="288,0,70,300"
+              AutomationId="sol"     
+              BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="360,0,70,300"
+              AutomationId="la"     
+              BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="432,0,70,300"
+              AutomationId="si"     
+              BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="504,0,70,300"
+              AutomationId="do1"     
+              BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="576,0,70,300"
+              AutomationId="re1"     
+              BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="648,0,70,300"
+              AutomationId="mi1"     
+              BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="720,0,70,300"
+              AutomationId="fa1"     
+              BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="792,0,70,300"
+              AutomationId="sol1"     
+              BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="864,0,70,300"
+              AutomationId="la1"     
+              BackgroundColor="White"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="936,0,70,300"
+              AutomationId="si1"     
+              BackgroundColor="White"></Button>
+
+                <!-- siyah-->
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="48,0,46,190"
+              AutomationId="do#"     
+              BackgroundColor="Black"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="120,0,46,190"
+              AutomationId="re#"     
+              BackgroundColor="Black"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="264,0,46,190"
+              AutomationId="fa#"     
+              BackgroundColor="Black"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="336,0,46,190"
+              AutomationId="sol#"     
+              BackgroundColor="Black"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="408,0,46,190"
+              AutomationId="la#"     
+              BackgroundColor="Black"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="552,0,46,190"
+              AutomationId="do#1"         
+              BackgroundColor="Black"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="624,0,46,190"
+              AutomationId="re#1"         
+              BackgroundColor="Black"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="768,0,46,190"
+              AutomationId="fa#1"         
+              BackgroundColor="Black"></Button>
+                <Button 
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="840,0,46,190"
+              AutomationId="sol#1"         
+              BackgroundColor="Black"></Button>
+                <Button
+                    Pressed="Button_Pressed"
+                AbsoluteLayout.LayoutBounds="912,0,46,190"
+              AutomationId="la#1"         
+              BackgroundColor="Black"></Button>
+
+            </AbsoluteLayout>
+
+
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
